@@ -1,0 +1,73 @@
+:root {
+    --aqua: #13bfcb;
+    --pink: #ffa2d9;
+    --topHeader: #f5f5f5;
+    --topFooter: #d6d6d6;
+    --bottomFooter: #434b4d;
+    --heroGradient1: #ecebe9;
+    --heroGradient2: #d4d4d4;
+    --logoBg: #f4f4f4;
+    --logoText: #cbcfce;
+    --kiwi: 'Kiwi Maru', serif;
+    --suwannaphum: 'Suwannaphum', serif;
+    --zilla: 'Zilla Slab', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.caps {
+    text-transform: capitalize;
+}
+
+.top-header {
+    color: var(--bottomFooter);
+    background-color: var(--topHeader);
+    border-top: 2px solid var(--aqua);
+}
+
+.top-nav-link {
+    color: var(--bottomFooter);
+    font-size: 14px;
+}
+
+.heading {
+    /* margin: 30px; */
+    letter-spacing: -1px;
+}
+
+#logo1 {
+    font-family: var(--kiwi);
+}
+
+#logo2 {
+    font-family: var(--suwannaphum);
+}
+
+#logo3 {
+    font-family: var(--zilla);
+}
+
+.logoStyle {
+    padding: 4px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    background-color: var(--aqua);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.aqua {
+    color: var(--aqua);
+}
+
+.top-nav-link {
+    text-transform: capitalize;
+}
