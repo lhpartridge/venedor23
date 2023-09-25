@@ -33,13 +33,22 @@ a {
     border-top: 2px solid var(--aqua);
 }
 
+navbar {
+    margin: 0;
+    padding: 0;
+}
+
 .top-nav-link {
     color: var(--bottomFooter);
     font-size: 14px;
 }
 
+.top-header-text {
+    padding-top: 12px;
+}
+
 .heading {
-    /* margin: 30px; */
+    margin: 20px 0;
     letter-spacing: -1px;
 }
 
@@ -70,4 +79,13 @@ a {
 
 .top-nav-link {
     text-transform: capitalize;
+}
+
+.main-nav-link {
+    text-transform: uppercase;
+    color: var(--bottomFooter);
+}
+
+.main-nav-link:hover {
+    color: var(--aqua);
 }
