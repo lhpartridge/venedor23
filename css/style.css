@@ -27,6 +27,9 @@ a {
     text-transform: capitalize;
 }
 
+.upper {
+    text-transform: uppercase;
+}
 .top-header {
     color: var(--bottomFooter);
     background-color: var(--topHeader);
@@ -79,6 +82,7 @@ navbar {
 
 .top-nav-link {
     text-transform: capitalize;
+    margin-right: 8px;
 }
 
 .main-nav-link {
@@ -88,4 +92,96 @@ navbar {
 
 .main-nav-link:hover {
     color: var(--aqua);
+}
+
+.currency-btn, .language-btn, .cart-total-btn {
+    margin: 0 2px;
+    background-color: var(--aqua);
+    border-radius: 0;
+}
+
+/* =============================== carousel ========================================= */
+
+.carousel-section {
+    height: auto;
+    background-color: var(--heroGradient1);
+    background-image: linear-gradient(var(--heroGradient2), var(--heroGradient1), var(--heroGradient2));
+}
+
+.carousel-heading, .carousel-sub {
+    display: inline-block;
+    padding: 0px 8px;
+    text-transform: uppercase;
+}
+
+.carousel-heading {
+    color: #fff;
+    background-color: var(--aqua);
+}
+
+.carousel-sub {
+    font-size: 24px;
+    color: #fff;
+    background-color: var(--bottomFooter);
+}
+
+.carousel-btn {
+    font-family: var(--);
+    text-transform: uppercase;
+    background-color: var(--bottomFooter);
+    color: #fff;
+    border-radius: 0;
+}
+
+.carousel-indicators .active {
+    background-color: var(--aqua);
+}
+
+/* ========================================= features ================================================== */
+
+.shipping-div {
+    background-color: var(--heroGradient1);
+    background-image: linear-gradient(var(--heroGradient2), var(--heroGradient1), var(--heroGradient2));
+}
+
+.shipping-heading, .shipping-sub {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.shipping-heading {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.shipping-sub, .shipping-price {
+    margin: 0;
+    font-size: 22px;
+}
+
+.shipping-heading, .shipping-price {
+    color: var(--aqua);
+}
+
+.sale-div {
+    margin: 0 4px;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--pink);
+}
+
+.sale-text {
+    display: inline-block;
+    font-size: 84px;
+    font-weight: 700;
+}
+
+.sale-tag {
+    border: 2px solid green;
+    /* width: ; */
+    align-items: center;
+    font-size: 16px;
+    transform: rotate(-90deg);
 }
