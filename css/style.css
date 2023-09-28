@@ -1,6 +1,7 @@
 :root {
     --aqua: #13bfcb;
     --pink: #ffa2d9;
+    --hotPink:  #ff0498;
     --topHeader: #f5f5f5;
     --topFooter: #d6d6d6;
     --bottomFooter: #434b4d;
@@ -8,9 +9,10 @@
     --heroGradient2: #d4d4d4;
     --logoBg: #f4f4f4;
     --logoText: #cbcfce;
-    --kiwi: 'Kiwi Maru', serif;
-    --suwannaphum: 'Suwannaphum', serif;
     --zilla: 'Zilla Slab', serif;
+    --sofia: 'Sofia Sans Semi Condensed', sans-serif;
+    --barlow: 'Barlow Condensed', sans-serif;
+    --currentColor:  #f1d04c;
 }
 
 * {
@@ -36,7 +38,7 @@ a {
     border-top: 2px solid var(--aqua);
 }
 
-navbar {
+.navbar {
     margin: 0;
     padding: 0;
 }
@@ -55,15 +57,7 @@ navbar {
     letter-spacing: -1px;
 }
 
-#logo1 {
-    font-family: var(--kiwi);
-}
-
-#logo2 {
-    font-family: var(--suwannaphum);
-}
-
-#logo3 {
+#logo {
     font-family: var(--zilla);
 }
 
@@ -139,7 +133,11 @@ navbar {
 
 /* ========================================= features ================================================== */
 
-.shipping-div {
+.shipping-div, .sale-div, .arrivals-div {
+    
+}
+
+.shipping-div, .arrivals-div {
     background-color: var(--heroGradient1);
     background-image: linear-gradient(var(--heroGradient2), var(--heroGradient1), var(--heroGradient2));
 }
@@ -165,23 +163,169 @@ navbar {
 }
 
 .sale-div {
-    margin: 0 4px;
-    justify-content: center;
+    /* border: 2px solid purple; */
+    padding: 8px;
+    height: 150px;
+    /* position: relative; */
+    /* margin: 0 4px; */
+    /* justify-content: center; */
     text-transform: uppercase;
     color: #fff;
     background-color: var(--pink);
 }
 
 .sale-text {
-    display: inline-block;
-    font-size: 84px;
+    /* border: 2px solid yellow; */
+    
+    margin: 0;
+    text-align: end;
+    /* display: inline-block; */
+    font-size: 90px;
+    /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
     font-weight: 700;
 }
 
 .sale-tag {
-    border: 2px solid green;
-    /* width: ; */
+    /* position: absolute; */
+    /* bottom: 45%; */
+    /* right: 0; */
+    /* align-self: center; */
+    margin: 0;
+    /* border: 2px solid green; */
+    width: 120px;
+    /* align-items: center; */
+    font-size: 14px;
+    /* font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300))); */
+    transform: rotate(-90deg) translateX(-1px);
+    /* transform: translateY(50px); */
+}
+
+.arrivals-div {
+    position: relative;
+    z-index: 0;
+    background-color: var();
+    /* width: 200px; */
     align-items: center;
-    font-size: 16px;
-    transform: rotate(-90deg);
+}
+
+.shoe-div {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 1;
+    text-transform: uppercase;
+    font-family: var(--barlow);
+}
+
+.arrivals-img {
+    /* position: absolute; */
+    /* top: 0; */
+    /* z-index: 2; */
+    /* width: 90%; */
+}
+
+.shoe-text {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    padding-top: 26px;
+    border: 6px solid yellow;
+    margin: 8px;
+    height: 90%;
+    /* width: 100% */
+    z-index: 3;
+}
+
+.arrivals-text {
+    padding: 0 33px;
+    top: 0;
+    z-index: 4;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--aqua);
+    background-color: transparent;
+}
+
+.hrule {
+    margin-top: -3px;
+    height: 10px;
+    padding: 0;
+    border-top: 1px solid var(--bottomFooter);
+}
+
+.latest-h2 {
+    margin: -40px ;
+    font-family: var(--barlow);
+    font-size: 56px;
+    text-transform: capitalize;
+    border-left: 6px solid var(--aqua);
+}
+
+.latest-btn {
+    margin: -20px 0;
+    padding: 0;
+    width: 40px;
+    height: 36px;
+    font-size: 24px;
+    font-family: var(--);
+    text-transform: uppercase;
+    background-color: var(--topFooter);
+    color: var(--bottomFooter);
+    border: 1px solid var(--bottomFooter);
+    border-radius: 0;
+}
+
+.active-btn {
+    background-color: var(--aqua);
+    color: #fff;
+}
+
+.latest-text {
+    margin: 0 -30px;
+    padding: 0;
+}
+
+.card, .card-footer {
+    border: none;
+}
+
+.discount {
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: #fff;
+    background-color: var(--hotPink);
+}
+
+.price-div {
+    align-items: center;
+    justify-content: center;
+    bottom: 160px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    padding: 10px ;
+    font-size: 30px;
+    color: #fff;
+    background-color: var(--aqua);
+    border-radius: 50%;
+}
+
+.card-footer {
+    background-color: transparent;
+}
+
+.star {
+    margin: 2px;
+    height: 24px;
+}
+
+.add-btn {
+    font-family: var(--);
+    text-transform: uppercase;
+    background-color: var(--bottomFooter);
+    color: #fff;
+    border-radius: 0;
 }
