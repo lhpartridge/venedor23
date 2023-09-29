@@ -1,5 +1,5 @@
 :root {
-    --aqua: #13bfcb;
+    --aqua: #14bfcc;
     --pink: #ffa2d9;
     --hotPink:  #ff0498;
     --topHeader: #f5f5f5;
@@ -12,6 +12,8 @@
     --zilla: 'Zilla Slab', serif;
     --sofia: 'Sofia Sans Semi Condensed', sans-serif;
     --barlow: 'Barlow Condensed', sans-serif;
+    --text: 'Oswald', sans-serif;
+    --textColor: #7c807e;
     --currentColor:  #f1d04c;
 }
 
@@ -88,7 +90,9 @@ a {
     color: var(--aqua);
 }
 
-.currency-btn, .language-btn, .cart-total-btn {
+.top-nav-text
+
+.currency-btn, .language-btn, .cart-total-btn,{
     margin: 0 2px;
     background-color: var(--aqua);
     border-radius: 0;
@@ -119,8 +123,8 @@ a {
     background-color: var(--bottomFooter);
 }
 
-.carousel-btn {
-    font-family: var(--);
+.carousel-btn, .newsletter-btn {
+    font-family: var(--text);
     text-transform: uppercase;
     background-color: var(--bottomFooter);
     color: #fff;
@@ -133,128 +137,18 @@ a {
 
 /* ========================================= features ================================================== */
 
-.shipping-div, .sale-div, .arrivals-div {
-    
-}
-
-.shipping-div, .arrivals-div {
-    background-color: var(--heroGradient1);
-    background-image: linear-gradient(var(--heroGradient2), var(--heroGradient1), var(--heroGradient2));
-}
-
-.shipping-heading, .shipping-sub {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-.shipping-heading {
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.shipping-sub, .shipping-price {
-    margin: 0;
-    font-size: 22px;
-}
-
-.shipping-heading, .shipping-price {
-    color: var(--aqua);
-}
-
-.sale-div {
-    /* border: 2px solid purple; */
-    padding: 8px;
-    height: 150px;
-    /* position: relative; */
-    /* margin: 0 4px; */
-    /* justify-content: center; */
-    text-transform: uppercase;
-    color: #fff;
-    background-color: var(--pink);
-}
-
-.sale-text {
-    /* border: 2px solid yellow; */
-    
-    margin: 0;
-    text-align: end;
-    /* display: inline-block; */
-    font-size: 90px;
-    /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
-    font-weight: 700;
-}
-
-.sale-tag {
-    /* position: absolute; */
-    /* bottom: 45%; */
-    /* right: 0; */
-    /* align-self: center; */
-    margin: 0;
-    /* border: 2px solid green; */
-    width: 120px;
-    /* align-items: center; */
-    font-size: 14px;
-    /* font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300))); */
-    transform: rotate(-90deg) translateX(-1px);
-    /* transform: translateY(50px); */
-}
-
-.arrivals-div {
-    position: relative;
-    z-index: 0;
-    background-color: var();
-    /* width: 200px; */
-    align-items: center;
-}
-
-.shoe-div {
-    position: absolute;
-    top: 10px;
-    left: 25%;
-    z-index: 1;
-    text-transform: uppercase;
-    font-family: var(--barlow);
-}
-
-.arrivals-img {
-    /* position: absolute; */
-    /* top: 0; */
-    /* z-index: 2; */
-    /* width: 90%; */
-}
-
-.shoe-text {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    padding-top: 26px;
-    border: 6px solid yellow;
-    margin: 8px;
-    height: 90%;
-    /* width: 100% */
-    z-index: 3;
-}
-
-.arrivals-text {
-    padding: 0 33px;
-    top: 0;
-    z-index: 4;
-    font-size: 42px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--aqua);
-    background-color: transparent;
+.latest-section {
+    /* padding: 40px 0; */
 }
 
 .hrule {
     margin-top: -3px;
     height: 10px;
     padding: 0;
-    border-top: 1px solid var(--bottomFooter);
+    border-top: 1px solid var(--textColor);
 }
 
-.latest-h2 {
+.latest-h2, .welcome-h2, .bestsellers-h2, .manufacturers-h2 {
     margin: -40px ;
     font-family: var(--barlow);
     font-size: 56px;
@@ -262,7 +156,7 @@ a {
     border-left: 6px solid var(--aqua);
 }
 
-.latest-btn {
+.latest-btn, .bestsellers-btn, .manufacturers-btn  {
     margin: -20px 0;
     padding: 0;
     width: 40px;
@@ -281,9 +175,14 @@ a {
     color: #fff;
 }
 
-.latest-text {
-    margin: 0 -30px;
-    padding: 0;
+.latest-text, .welcome-text {
+    margin: 0 0 20px -30px;
+    padding: 0 60px 0 0;
+    font-size: 20px;
+    font-family: var(--text);
+    text-indent: 30px;
+    line-height: 1.5;
+    color: var(--textColor);
 }
 
 .card, .card-footer {
@@ -297,6 +196,17 @@ a {
     font-size: 30px;
     color: #fff;
     background-color: var(--hotPink);
+}
+
+.new {
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--aqua);
 }
 
 .price-div {
@@ -322,10 +232,60 @@ a {
     height: 24px;
 }
 
+.card-title {
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
 .add-btn {
     font-family: var(--);
     text-transform: uppercase;
     background-color: var(--bottomFooter);
     color: #fff;
     border-radius: 0;
+}
+
+.welcome-h2 {
+    border-left: 4px solid #14bfcc;
+}
+
+.devices {
+    margin: -50px;
+}
+
+.newsletter-section {
+    background-color: var(--heroGradient1);
+    background-image: linear-gradient(var(--heroGradient2), var(--heroGradient1), var(--heroGradient2));
+}
+
+.newsletter-text {
+    font-family: var(--barlow);
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.newsletter-input {
+    border: 4px solid yellow;
+    height: 30px;
+}
+
+footer {
+    background-color: var(--bottomFooter);
+}
+
+.account-list {
+    list-style-type:square;
+    color:  var(--aqua);
+}
+
+.footer-nav-link {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--textColor)
+}
+
+.footer-nav-link:hover {
+    color: var(--aqua);
 }
